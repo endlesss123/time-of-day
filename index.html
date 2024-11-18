@@ -40,10 +40,11 @@
 		<h1 class="masthead">Time of Day</h1>
 	</header>
     <main>
-	 <header><h3>A JavaScript Project by YOUR NAME HERE</h3></header>
+	 <header><h3>A JavaScript Project by Endless Thao </h3></header>
 	 <h3 id="my-greeting">Greeting Goes Here</h3>
 	    <p>Explain what your page does and how it works here!</p>
-	  <img src="http://dummyimage.com/300x400" alt="Time of Day Image" class="flexible">
+	  <img src="http://dummyimage.com/300x400" alt="Time of Day Image" class="flexible"
+	  id="my-pic">
      <footer>
       <p><small>&copy; 2022 by 
           YOUR NAME HERE, All Rights Reserved ~ 
@@ -68,17 +69,18 @@
 	myHour = myDate.getHours();
 
 	if(myHour >12){
-		//alert("Good Afternoon!");
-		mySentence = "Good Afternoon!";
+       mySentence = "Good Afternoon!";
 		myColor ="green";
+		myPic = "afternoon.jpg";
 	}else{
-		//alert("Good Morning!");
-		mySentence = "Good Morning!";
+       mySentence = "Good Morning!";
 		myColor ="orange";
+		myPic = "morning.jpg";
 	}
 
     document.getElementById("my-greeting").innerHTML = mySentence;
 	document.body.style.backgroundColor = myColor;
+	document.getElementById("my-pic").src + myPic;
 
 
 
